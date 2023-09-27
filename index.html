@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galactic News Portal</title>
+    <link rel="stylesheet" href="css/card.css" />
+  </head>
+  <body>
+    <section class="container">
+      <card-news
+        id="card"
+        author="David Teixeira"
+        title="Darth Vader Hires Devs"
+        content="Darth Vader is looking for developers who know how to work"
+        photo="assets/img/darth-vader.jpg"
+        alt="Darth Vader hiring a guy"
+      ></card-news>
+      <dynamic-title title="Urgent News"></dynamic-title>
+      <dynamic-title title="New title"></dynamic-title>
+    </section>
+
+    <script src="src/components/CardNews.js" defer></script>
+    <script src="src/components/DynamicTitle.js" defer></script>
+  </body>
+</html>

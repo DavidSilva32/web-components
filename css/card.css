@@ -1,0 +1,64 @@
+:root {
+  --text-color: #777777;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 80%;
+}
+.card .left_card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card .left_card span {
+  font-weight: 400;
+}
+.card .left_card a {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #000;
+}
+.card .left_card p {
+  color: var(--text-color);
+}
+.card .right_card img {
+  max-width: 100%;
+  width: 425px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+@media screen and (min-width: 425px) {
+  .card {
+    max-width: 768px;
+    padding: 0;
+    flex-direction: row;
+    gap: unset;
+    border-radius: 1rem;
+    /* Box Shadow */
+    box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .card .left_card {
+    justify-content: center;
+    width: 80%;
+  }
+
+  .card .right_card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
